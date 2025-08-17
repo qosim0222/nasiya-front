@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+.containers {
+  width: 400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page-loading-img {
+  animation-name: pageLoading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition: all 1s;
+}
+
+.active {
+  color: #0e5ff6;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ant-picker-calendar .ant-picker-cell-in-view > .ant-picker-cell-inner {
+  background-color: #f6f6f6 !important;
+  width: 46px !important;
+  height: 48px !important;
+  padding: 8px !important;
+  display: flex !important;
+  align-items: end !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  border: 1px solid #EDEDED ;
+}
+
+.ant-picker-calendar .ant-picker-cell-selected > .ant-picker-cell-inner{
+  background-color: #DDE9FE !important;
+  color: black !important;
+  border: 1px solid #78A5FA ;
+}
+.ant-picker-panel {
+  border-top: none !important;
+}
+
+.ant-upload-select, .ant-upload-list-item-container{
+  width: 48% !important;
+  height: 112px !important;
+  border-radius: 16px !important;
+  border: 1px solid #ECECEC !important;
+}
+
+.ant-upload-list-item{
+  border: none !important;
+  padding: 0 !important;
+}
+
+.ant-upload-list-item::before{
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 16px !important;
+}
+
+
+.ant-upload-list-item-thumbnail > img{
+  width: 100% !important;
+  object-fit: fill !important;
+  border-radius: 16px !important;
+}
+
+
+@keyframes pageLoading {
+  0% {
+    transform: scale(1) rotateY(0deg);
+  }
+  100% {
+    transform: scale(1.5) rotateY(180deg);
+  }
+}
+
+@media (max-height: 600px) {
+  .bottom-text {
+    opacity: 0% !important;
+  }
+}
