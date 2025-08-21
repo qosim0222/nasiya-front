@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { DebtorIcon, HomeIcon, PaymentIcon, SettingIcon } from "@/assets/icons";
-import { paths } from "../../hooks/paths";
+import { paths } from "@/hooks/paths";
 
 const Menu = () => {
   return (
@@ -15,7 +15,7 @@ const Menu = () => {
             <DebtorIcon />
             <p>Mijozlar</p>
           </NavLink>
-          <NavLink to={paths.pay} className="flex flex-col items-center justify-center space-y-[3px] text-[#637D92]">
+          <NavLink to={paths.notifications} className="flex flex-col items-center justify-center space-y-[3px] text-[#637D92]">
             <PaymentIcon />
             <p>Hisobot</p>
           </NavLink>

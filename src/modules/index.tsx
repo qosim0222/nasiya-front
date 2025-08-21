@@ -1,5 +1,6 @@
 import Menu from "./Menu/Menu";
-import NotificationMessage from "./Notification/NotificationMessage";
-import HistoryPayment from "./Notification/HistoryPayment";
+import NotificationMessage from "../pages/dashboard/report/NotificationMessage";
+import HistoryPayment from "../pages/dashboard/report/HistoryPayment";
+import NotificationMessageNotFound from "../pages/dashboard/report/NotificationMessageNotfound";
 
-export { Menu, HistoryPayment, NotificationMessage };
+export { Menu, HistoryPayment, NotificationMessage, NotificationMessageNotFound };
